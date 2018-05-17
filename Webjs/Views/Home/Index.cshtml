@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Webjs.Models.NewsModel>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/StyleIndex.css">
+</head>
+<body>
+    <script src="~/js/IndexJs.js">
+
+    </script>
+    <div class="DivClas">
+        <header>
+            <h1>News</h1>
+            <label id="LabelForGetUpdate" onclick="CLickUpdate()"></label>
+            <hr />
+            <button onclick="ClicOfButton()" id="SearchButton">
+                >
+            </button>
+
+            <div id="SearchPanel" class="SearchPanel">
+                <p>
+                    Главные новости
+                    <br />
+                    <br />
+                     В мире<br />
+                    <br />
+                     Наука<br />
+                    <br />
+                    
+                    Искуство
+                    <br />
+                    <br />
+                    Техника
+                </p>
+
+                <button class="Button" onclick="ClicOfButton1()">
+                    <
+                </button>
+            </div>
+        </header>
+    </div>
+   
+    <div class="ForTable">
+        <table cellspacing="0" class="table">
+            @foreach (var item in Model)
+            {
+                <tr><td><img src="@Url.Content(@item.Text)"></td><td><a href="@item.Url"><strong>@item.Header</strong></a></td></tr>
+            }
+        </table>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿body {
+    background-color: antiquewhite;
+    margin:0px;
+}
+h1 {
+    margin-left: 45%;
+    margin-top: 0px;
+    font-size: 50px;
+    -webkit-margin-after: 0.27em;
+    
+}
+a{
+    text-decoration:none;
+    color:black;
+    font-size: 20px;
+}
+table {
+    width: 50%;
+    margin-left: 24%;
+}
+td, th {
+    text-align: center; /* Выравнивание по центру */
+    padding: 3px; /* Поля вокруг содержимого ячеек */
+    color: white; /* Цвет текста */
+    border-bottom: 2px solid black; /* Линия снизу */
+}
+
+TH {
+   
+}
+tr{
+    border:solid;
+    border-width: thin;
+}
+.DivClas{
+    width:100%;
+    position: fixed;
+   display:block;
+   background-color:antiquewhite;
+}
+.ForTable {
+    padding-top: 150px;
+    display: block;
+}
+header{
+    margin-top:30px;
+    width:100%;
+    background-color: antiquewhite;
+}
+label {
+    margin-left: 41.5%;
+    margin-bottom: 0%;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid black;
+    display:none;
+    padding:15px;
+    padding-left:50px;
+    padding-right:50px;
+    font-size: 20px;
+}
+label:hover{
+    background-color:goldenrod;
+}
+button{
+    display:inline-block;
+    position:fixed;
+    height:260px;
+    background-color:antiquewhite;
+}
+    button:hover {
+        background-color: goldenrod;
+     }
+.SearchPanel {
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 260px;
+    background-color:bisque;
+}
+p {
+    width: 100px;
+    margin-right: 0px;
+    display: inline-block;
+    -webkit-margin-before: 0.5em;
+}
+.Button {
+    display: inline-block;
+    background-color: bisque;
+}
+
